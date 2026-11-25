@@ -1,0 +1,22 @@
+:root {
+  --forest: #244B35;
+  --sage: #789477;
+  --cream: #F4EEDC;
+  --gold: #C4A76C;
+  --ink: #20382A;
+  --cream-deep: #EAE2CA;
+  --white: #FFFDF6;
+  --heart: #E5806F;
+
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: clamp(2rem, 5vw, 3.4rem);
+
+  --space-1: .5rem; --space-2: 1rem; --space-3: 1.5rem; --space-4: 2.5rem; --space-5: 4rem;
+  --radius: 10px;
+  --max: 68rem;
+}

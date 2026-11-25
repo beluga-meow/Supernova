@@ -1,0 +1,27 @@
+.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: var(--space-2); margin: var(--space-3) 0 var(--space-2); }
+.filters label { display: flex; flex-direction: column; gap: .25rem; font-weight: 600; font-size: .9rem; }
+.filters .check { flex-direction: row; align-items: center; align-self: end; gap: .5rem; }
+input[type="search"], select { padding: .6rem; border: 2px solid var(--sage); border-radius: var(--radius); background: var(--white); color: var(--ink); font: inherit; }
+.res .meta, .meta { font-size: .85rem; color: #4d6556; }
+.res h3 a { text-decoration: none; }
+.res h3 a:hover { text-decoration: underline; }
+.btn.small { padding: .35rem .8rem; font-size: .9rem; }
+.btn[aria-pressed="true"] { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: var(--space-2); margin-bottom: var(--space-3); }
+progress { width: 100%; height: .8rem; accent-color: var(--forest); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.options { display: grid; gap: var(--space-1); max-width: 30rem; margin: var(--space-2) 0; }
+.opt { text-align: left; }
+.opt:disabled { cursor: default; }
+.opt.good { background: var(--sage); color: var(--white); border-color: var(--sage); }
+.opt.bad { border-color: #A8483A; background: #F3DDD7; }
+
+.hearts-bar { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem .75rem; margin: var(--space-2) 0; background: var(--ink); color: var(--cream); border: 3px solid var(--gold); box-shadow: 4px 4px 0 var(--forest); font-family: ui-monospace, "Courier New", monospace; font-weight: 700; }
+.px-heart { width: 1.7rem; height: 1.5rem; image-rendering: pixelated; }
+.px-heart .ol { fill: #111; }
+.px-heart .fill { fill: #E04848; }
+.px-heart .shine { fill: var(--cream); }
+.px-heart.empty .fill { fill: #3B4A40; }
+.px-timer { margin-left: .5rem; font-size: .9rem; letter-spacing: .08em; font-variant-numeric: tabular-nums; }
+.hearts-bar.hit { animation: px-shake .4s steps(4); }
+@keyframes px-shake { 25% { transform: translateX(-4px); } 50% { transform: translateX(4px); } 75% { transform: translateX(-2px); } }
